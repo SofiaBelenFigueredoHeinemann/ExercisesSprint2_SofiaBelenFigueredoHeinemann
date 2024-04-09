@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col bg-purple-700">
+
+    <h2 class="align-center font-bold">EJERCICIO 1</h2>
+    <p>Click en el cuadrado para que cambie de color</p>
+
+    <div class="flex flex-wrap flex-column align-center gap-4 p-10 font-bold">
+        <div id="colorSquare" class="h-[200px] w-[200px]  bg-gray-400 border-solid border-2 border-black">
+            <p id="textColorSquare" class="font-bold text-center align-center"></p>
+        </div>
+        <button id="buttonChange" class="h-[50px] bg-yellow-200 p-4  border-solid border-2 border-black rounded-lg"
+            type="button"> CHANGE COLOR</button>
+    </div>
+
+    <h2 class="align-center mt-10 font-bold"">EJERCICIO 2</h2>
+    <p>Escribir y que se muestre en el cuadrado. Boton para resetear</p>
+
+    <div
+        class="h-[350px] w-[400px] bg-gray-400 border-solid border-2 border-black flex flex-wrap gap-6 justify-center content-around m-10">
+        <div class="flex flex-wrap flex-column justify-center gap-4 p-4">
+            <p id="conteinerOne" class="h-[180px] w-[350px] bg-white border-solid border-1 border-black"></p>
+            <input id="inputOne" placeholder="Ingrese algún texto" type="text" class="w-[350px] " name="inputOne">
+            <button id="resetButton"
+                class="h-[50px] bg-yellow-200 p-4  border-solid border-2 border-black rounded-lg font-bold"
+                type="reset">RESET</button>
+        </div>
+    </div>
+
+    <h2 class="align-center mt-10">EJERCICIO 3</h2>
+    <p>Escribir altura y peso y se muestre en la Masa Corporal. </p>
+
+    <div
+        class="h-[350px] w-[400px] p-6 bg-gray-400 border-solid border-2 border-black flex flex-wrap gap-6 justify-center content-around m-10">
+        <div class="flex flex-wrap flex-column justify-center gap-4 p-4">
+            <label>ESTATURA en centimetros
+                <input id="inputEstatura" placeholder="Ingrese ESTATURA en cm" type="number" class="w-[350px] "
+                    name="inputEstatura">
+            </label>
+
+            <label>PESO en kg
+                <input id="inputPeso" placeholder="Ingrese PESO en kg" type="number" class="w-[350px] "
+                    name="inputPeso">
+            </label>
+
+            <button id="botImc"
+                class="h-[50px] bg-yellow-200 p-4  border-solid border-2 border-black rounded-lg font-bold">
+                CALCULA IMC</button>
+
+        </div>
+    </div>
+
+    <div
+        class="h-[150px] w-[400px] p-6 bg-gray-400 border-solid border-2 border-black flex flex-wrap gap-6 justify-center content-around m-10">
+        <h3 class="w-[400px] font-bold text-center">RESULTADO</h3>
+        <p class="w-[400px] text-center"> Su indice de masa corporal es:</p>
+        <p id="resultadoIMC" class="text-center"></p>
+    </div>
+
+    <h2 class="align-center mt-10">EJERCICIO 4</h2>
+    <p>CONVERSOR DE MONEDAS </p>
+
+    <div
+        class="h-[350px] w-[400px] p-6 bg-gray-400 border-solid border-2 border-black flex flex-wrap gap-6 justify-center content-around m-10">
+        <div class="flex flex-wrap flex-column justify-center gap-4 p-4">
+
+            <label>MONTO MONEDA LOCAL
+                <p class="italic">sin comas ni puntos</p>
+                <input id="inputPesos" placeholder="Ingreso monto en Pesos" type="number" class="w-[350px] "
+                    name="inputPesos">
+            </label>
+            <p id="rdoPesos" class="w-[300px] font-bold text-red-800"></p>
+
+
+            <label>MONTO EN DOLARES
+                <p class="italic">(sin comas ni puntos) // Cambio a $500 = 1 dolar</p>
+                <input id="inputDolares" placeholder="Ingresa monto en Dolares" type="number" class="w-[350px] "
+                    name="inputDolares">
+            </label>
+            <p id="rdoDolar" class="w-[300px] font-bold text-red-800"></p>
+
+            <button id="botConv"
+                class="h-[50px] bg-yellow-200 p-4  border-solid border-2 border-black rounded-lg font-bold">
+                CONVERT
+            </button>
+
+            <button id="botReset"
+            class="h-[50px] bg-yellow-200 p-4 border-solid border-2 border-black rounded-lg font-bold">
+            DELETE
+        </button>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./exercises.js"></script>
+</body>
+
+</html>
